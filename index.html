@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>白石あやねの愛用コスメ・美容アイテム</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+         background: #fdf6f8; color: #3a2a2e; }
+
+  .hero { background: linear-gradient(135deg, #e8a0b0 0%, #c96b87 100%);
+          color: white; text-align: center; padding: 40px 20px 30px; }
+  .hero .avatar { width: 80px; height: 80px; border-radius: 50%;
+                  border: 3px solid rgba(255,255,255,0.6);
+                  background: #e06080; display: inline-flex;
+                  align-items: center; justify-content: center;
+                  font-size: 32px; margin-bottom: 12px; }
+  .hero h1 { font-size: 20px; font-weight: bold; margin-bottom: 6px; }
+  .hero p { font-size: 13px; opacity: 0.9; line-height: 1.7; }
+
+  .section { padding: 24px 16px 8px; }
+  .section-title { font-size: 13px; color: #b07080; font-weight: bold;
+                   letter-spacing: 0.05em; margin-bottom: 14px;
+                   text-transform: uppercase; }
+
+  .product-card { background: white; border-radius: 18px;
+                  overflow: hidden; box-shadow: 0 2px 14px rgba(200,100,120,0.10);
+                  margin-bottom: 18px; border: 1px solid #f0d8de; }
+  .product-img { width: 100%; height: 200px; object-fit: cover;
+                 background: linear-gradient(135deg, #f8d7df, #f0b8c8);
+                 display: flex; align-items: center; justify-content: center;
+                 font-size: 52px; }
+  .product-body { padding: 18px; }
+  .product-badge { display: inline-block; background: #fce8ee; color: #c96b87;
+                   font-size: 11px; font-weight: bold; padding: 3px 10px;
+                   border-radius: 20px; margin-bottom: 10px; }
+  .product-name { font-size: 17px; font-weight: bold; margin-bottom: 8px; color: #3a2a2e; }
+  .product-desc { font-size: 13px; color: #7a5a62; line-height: 1.7; margin-bottom: 16px; }
+  .btn-product { display: block; background: linear-gradient(135deg, #e06080, #c04060);
+                 color: white; text-align: center; padding: 14px;
+                 border-radius: 12px; font-size: 15px; font-weight: bold;
+                 text-decoration: none; letter-spacing: 0.03em; }
+  .btn-product:hover { opacity: 0.9; }
+
+  .empty-msg { text-align: center; color: #b09099; font-size: 14px;
+               padding: 30px 0; }
+
+  .footer { text-align: center; padding: 28px 16px; font-size: 11px; color: #c0a0a8;
+            line-height: 1.8; border-top: 1px solid #f0d8de; margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="avatar">🌸</div>
+  <h1>白石あやね｜元エステティシャン</h1>
+  <p>サロン歴5年の経験をもとに<br>本当に効果を感じたアイテムだけを紹介しています</p>
+</div>
+
+<div class="section">
+  <div class="section-title">✨ 愛用コスメ・美容アイテム</div>
+  <div id="product-list"></div>
+</div>
+
+<div class="footer">
+  白石あやね — 元エステティシャンの美容日記<br>
+  ページ内のリンクにはアフィリエイトリンクが含まれます
+</div>
+
+<script src="beauty_data.js"></script>
+<script>
+  var ICONS = { "美容液": "💧", "美容器": "✨", "スキンケア": "🧴", "美顔器": "💎" };
+
+  if (typeof PRODUCT_LIST !== 'undefined' && PRODUCT_LIST.length > 0) {
+    var container = document.getElementById('product-list');
+    PRODUCT_LIST.forEach(function(p) {
+      var icon = ICONS[p.badge] || ICONS[p.category] || "🌸";
+      var imgHtml = p.image
+        ? '<img class="product-img" src="' + p.image + '" alt="' + p.name + '" loading="lazy">'
+        : '<div class="product-img">' + icon + '</div>';
+      var card = document.createElement('div');
+      card.className = 'product-card';
+      card.innerHTML =
+        imgHtml +
+        '<div class="product-body">' +
+          '<span class="product-badge">' + p.badge + '</span>' +
+          '<div class="product-name">' + p.name + '</div>' +
+          '<div class="product-desc">' + p.description + '</div>' +
+          '<a class="btn-product" href="' + p.url + '" target="_blank">' +
+            icon + ' 詳しくはこちら' +
+          '</a>' +
+        '</div>';
+      container.appendChild(card);
+    });
+  } else {
+    document.getElementById('product-list').innerHTML =
+      '<div class="empty-msg">準備中です</div>';
+  }
+</script>
+</body>
+</html>
