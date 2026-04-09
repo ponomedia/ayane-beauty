@@ -1,7 +1,7 @@
 // このファイルはbeauty_poster.pyが自動更新します
 const PRODUCT_LIST = [
   {
-    "name": "高単価美容液",
+    "name": "おすすめ美容液",
     "category": "スキンケア",
     "badge": "美容液",
     "description": "エステで使われているレベルの美容液。毎日使って約1ヶ月で肌のハリと透明感の違いを実感しました。",
