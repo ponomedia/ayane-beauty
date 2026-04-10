@@ -17,59 +17,59 @@ const PRODUCT_LIST = [
     "url": "https://px.a8.net/svt/ejp?a8mat=4B1G9N+DUXC16+5QIG+5YJRM"
   },
   {
-    "name": "ロゼット 洗顔パスタ",
+    "name": "ロゼット 洗顔パスタ 荒性肌用",
     "category": "洗顔",
     "badge": "洗顔料",
     "description": "30年以上売れ続ける理由がある洗顔料。毛穴・くすみへのアプローチが秀逸で、プチプラでこのクオリティは他にないです。",
     "image": "",
-    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%83%AD%E3%82%BC%E3%83%83%E3%83%88%2B%E6%B4%97%E9%A1%94%E3%83%91%E3%82%B9%E3%82%BF%2F"
+    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frosette-shop%2Fpasta_are90_1pc%2F"
   },
   {
-    "name": "ニベアクリーム（青缶）",
+    "name": "ニベアクリーム 青缶 169g",
     "category": "保湿",
     "badge": "保湿クリーム",
     "description": "正しい使い方を知ると、高級クリームと遜色ない保湿力。フェイスクリームとして使う方法がおすすめです。",
     "image": "",
-    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%83%8B%E3%83%99%E3%82%A2%2B%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%2B%E9%9D%92%E7%BC%B6%2F"
+    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2Fa001256000746%2F"
   },
   {
-    "name": "コーセー ハトムギ化粧水",
+    "name": "ナチュリエ ハトムギ化粧水",
     "category": "化粧水",
     "badge": "化粧水",
     "description": "500円台なのに保湿力と浸透感のコスパが圧倒的。必ずおすすめする化粧水のひとつです。",
     "image": "",
-    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B3%E3%83%BC%E3%82%BB%E3%83%BC%2B%E3%83%8F%E3%83%88%E3%83%A0%E3%82%AE%E5%8C%96%E7%B2%A7%E6%B0%B4%2F"
+    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbeautyconnect%2F4903335693601%2F"
   },
   {
-    "name": "セザンヌ アイブロウ",
+    "name": "セザンヌ ノーズ＆アイブロウパウダー",
     "category": "メイク",
     "badge": "アイブロウ",
     "description": "使い方次第でサロン仕上げの眉になれるプチプラ。眉一本で顔の印象は大きく変わります。",
     "image": "",
-    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%BB%E3%82%B6%E3%83%B3%E3%83%8C%2B%E3%82%A2%E3%82%A4%E3%83%96%E3%83%AD%E3%82%A6%2F"
+    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2F4939553042655%2F"
   },
   {
-    "name": "美顔ローラー",
+    "name": "ReFa CARAT（リファカラット）",
     "category": "美容器具",
     "badge": "フェイスケア",
-    "description": "本当に効くローラーとそうでないものがある。フェイスマッサージの効果を最大化する選び方をThreadsで解説しています。",
+    "description": "本当に効くローラーとそうでないものがある。フェイスマッサージの効果を最大化するなら、やはりこれ。",
     "image": "",
-    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%BE%8E%E9%A1%94%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%2F"
+    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmtgec-beauty%2FReFa-carat%2F"
   },
   {
-    "name": "フェイスシートマスク",
+    "name": "ピンクのルルルン 36枚入",
     "category": "スキンケア",
     "badge": "シートマスク",
-    "description": "毎日使っていいものと控えるべきものがある。頻度と選び方を間違えると逆効果になることも。",
+    "description": "毎日使えるバランス型シートマスクの定番。使いすぎ注意な商品が多い中、これは肌荒れしにくくて続けやすいです。",
     "image": "",
-    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%E3%82%B7%E3%83%BC%E3%83%88%E3%83%9E%E3%82%B9%E3%82%AF%2F"
+    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flululun-shop%2Flululun-5s%2F"
   },
   {
-    "name": "電動洗顔ブラシ",
+    "name": "電動洗顔ブラシ（超音波振動・防水）",
     "category": "洗顔器具",
     "badge": "洗顔グッズ",
-    "description": "敏感肌・乾燥肌の方は選び方を間違えると肌荒れします。肌質別の正しい選び方はThreadsで解説中。",
+    "description": "敏感肌・乾燥肌の方は選び方を間違えると肌荒れします。シリコン素材＋超音波振動タイプが肌に優しくておすすめ。",
     "image": "",
-    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E9%9B%BB%E5%8B%95%E6%B4%97%E9%A1%94%E3%83%96%E3%83%A9%E3%82%B7%2F"
+    "url": "https://hb.afl.rakuten.co.jp/hgc/52ac58bc.05f4f7c6.52ac58bd.4392e6e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Femikuru%2F4582300064976%2F"
   }
 ];
