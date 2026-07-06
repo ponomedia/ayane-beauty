@@ -3,77 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>白石あやね｜愛用アイテム</title>
+<title>白石あやね｜本気で選んだ美容アイテム</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif;
          background: #fff; color: #111; max-width: 480px; margin: 0 auto; }
 
-  .profile { padding: 40px 24px 28px; border-bottom: 1px solid #f0f0f0; }
-  .profile-inner { display: flex; align-items: center; gap: 16px; }
+  /* ── ヒーロー ── */
+  .hero { padding: 32px 24px 24px; border-bottom: 1px solid #f0f0f0; }
+  .profile-inner { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
   .avatar { width: 56px; height: 56px; border-radius: 50%;
             background: #fce4ec; display: flex; align-items: center;
             justify-content: center; font-size: 24px; flex-shrink: 0;
             border: 1px solid #f8bbd0; }
-  .profile-text h1 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
-  .profile-text p { font-size: 13px; color: #666; line-height: 1.5; }
+  .profile-text h1 { font-size: 15px; font-weight: 600; margin-bottom: 3px; }
+  .profile-text p { font-size: 12px; color: #888; line-height: 1.5; }
+  .hero-copy { font-size: 13px; color: #444; line-height: 1.7; margin-bottom: 16px; }
+  .hero-copy strong { color: #c2185b; }
 
-  .section { padding: 24px 24px 0; }
+  /* ── ピックアップ（高単価メイン） ── */
+  .pickup { margin: 0 24px 0; padding: 20px; background: #fff8fa;
+            border: 1.5px solid #f8bbd0; border-radius: 14px; }
+  .pickup-label { font-size: 10px; color: #c2185b; font-weight: 700;
+                  letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; }
+  .pickup-name { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+  .pickup-desc { font-size: 13px; color: #555; line-height: 1.65; margin-bottom: 16px; }
+  .btn-primary { display: block; background: #c2185b; color: #fff;
+                 text-align: center; padding: 14px; border-radius: 10px;
+                 font-size: 14px; font-weight: 600; text-decoration: none;
+                 letter-spacing: 0.02em; }
+  .btn-primary:hover { background: #ad1457; }
+
+  /* ── セクション ── */
+  .section { padding: 28px 24px 0; }
   .section-label { font-size: 11px; color: #999; letter-spacing: 0.08em;
                    text-transform: uppercase; margin-bottom: 16px; }
 
+  /* ── 通常カード ── */
   .product-card { border: 1px solid #e8e8e8; border-radius: 12px;
-                  padding: 18px; margin-bottom: 12px; }
+                  padding: 16px; margin-bottom: 10px; }
   .product-header { display: flex; justify-content: space-between;
-                    align-items: flex-start; margin-bottom: 8px; }
-  .product-name { font-size: 15px; font-weight: 600; }
-  .product-tag { font-size: 11px; color: #c2185b; font-weight: 500;
-                 background: #fce4ec; padding: 2px 8px; border-radius: 20px; }
-  .product-desc { font-size: 13px; color: #666; line-height: 1.6;
-                  margin-bottom: 14px; }
+                    align-items: flex-start; margin-bottom: 6px; }
+  .product-name { font-size: 14px; font-weight: 600; }
+  .product-tag { font-size: 10px; color: #c2185b; font-weight: 500;
+                 background: #fce4ec; padding: 2px 7px; border-radius: 20px;
+                 white-space: nowrap; margin-left: 8px; flex-shrink: 0; }
+  .product-desc { font-size: 12px; color: #777; line-height: 1.6; margin-bottom: 12px; }
   .btn { display: block; border: 1.5px solid #c2185b; color: #c2185b;
-         text-align: center; padding: 11px; border-radius: 8px;
+         text-align: center; padding: 10px; border-radius: 8px;
          font-size: 13px; font-weight: 500; text-decoration: none; }
   .btn:hover { background: #fdf0f3; }
   .btn-disabled { border-color: #ddd; color: #bbb; cursor: default; }
 
   .footer { padding: 32px 24px; font-size: 11px; color: #bbb;
-            border-top: 1px solid #f0f0f0; margin-top: 24px; }
+            border-top: 1px solid #f0f0f0; margin-top: 28px; line-height: 1.8; }
+
+  /* ── カテゴリ区切り ── */
+  .category-divider { font-size: 10px; color: #bbb; letter-spacing: 0.1em;
+                      text-transform: uppercase; margin: 20px 0 10px;
+                      padding-bottom: 6px; border-bottom: 1px solid #f0f0f0; }
+
+  /* ── NEWバッジ ── */
+  .tag-new { display: inline-block; font-size: 9px; background: #e8f5e9;
+             color: #2e7d32; padding: 2px 6px; border-radius: 10px;
+             font-weight: 700; margin-left: 5px; vertical-align: middle;
+             letter-spacing: 0.05em; }
+
+  /* ── ヘアオイルカード強調 ── */
+  .product-card.featured { border-color: #d1c4e9; background: #faf8ff; }
 </style>
 </head>
 <body>
 
-<div class="profile">
+<div class="hero">
   <div class="profile-inner">
     <div class="avatar">🌸</div>
     <div class="profile-text">
       <h1>白石あやね</h1>
-      <p>垢抜けを10年以上研究した私が選ぶ<br>厳選美容グッズをまとめています</p>
+      <p>元エステティシャン・美容研究家<br>Threads フォロワー6,700人</p>
     </div>
+  </div>
+  <p class="hero-copy">
+    都内高級エステサロン5年間で<strong>何百人もの肌を直接触ってきた</strong>私が、本当に効果を感じたものだけをまとめました。<br>
+    「良かった」も「期待外れだった」も、正直に書いています。
+  </p>
+</div>
+
+<!-- ピックアップ：高単価美容液 -->
+<div style="padding: 20px 24px 0;">
+  <div class="pickup" id="pickup-serum">
+    <div class="pickup-label">🏆 あやねのいちばんのおすすめ</div>
+    <div class="pickup-name">サロン帰りの肌が自宅で叶う美容液</div>
+    <p class="pickup-desc">
+      サロン在籍時、業務用美容液を使い続けた私が「これは家でも使いたい」と思った初めての1本。<br>
+      <strong>使い始めて3週間、夕方になっても肌のもちもち感が続くようになりました。</strong><br>
+      価格帯は高めですが、毎日使うものなので「1日あたりのコスト」で考えると納得できます。
+      私のフォロワーさんからも「肌が変わった」という報告が届いています。
+    </p>
+    <a class="btn-primary" href="https://px.a8.net/svt/ejp?a8mat=4B1G9N+DKSYQY+4GNW+5YJRM" target="_blank" onclick="gtag && gtag('event','click',{event_category:'affiliate',event_label:'serum_pickup'})">→ 商品詳細・価格を見る</a>
+  </div>
+</div>
+
+<!-- ピックアップ2：美容器 -->
+<div style="padding: 12px 24px 0;">
+  <div class="pickup" id="pickup-device" style="background:#f8f8ff; border-color:#c5cae9;">
+    <div class="pickup-label" style="color:#3949ab;">💆 毎朝5分の小顔ケア</div>
+    <div class="pickup-name">リフトアップ美容器</div>
+    <p class="pickup-desc">
+      フェイスマッサージを20年続けてきた私が「手でやるより断然ラク」と感じた美容器。<br>
+      <strong>エラのゴリゴリ感が2週間で変わり、朝の顔のむくみが取れやすくなりました。</strong><br>
+      使い方を間違えると逆効果になる機器なので、「正しい使い方」をプロ視点で解説します。
+    </p>
+    <a class="btn-primary" href="https://px.a8.net/svt/ejp?a8mat=4B1G9N+DUXC16+5QIG+5YJRM" target="_blank" style="background:#3949ab;" onclick="gtag && gtag('event','click',{event_category:'affiliate',event_label:'device_pickup'})">→ 商品詳細・価格を見る</a>
   </div>
 </div>
 
 <div class="section" style="padding-top:24px;">
-  <div class="section-label">愛用アイテム</div>
+  <div class="section-label">愛用アイテム一覧</div>
   <div id="product-list"></div>
 </div>
 
+<!-- スポンサー・PR問い合わせ -->
+<div style="margin: 28px 24px 0; padding: 20px; background: #f9f9f9; border-radius: 12px; border: 1px solid #e0e0e0;">
+  <div style="font-size: 11px; color: #999; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 10px;">BRAND COLLABORATION</div>
+  <div style="font-size: 15px; font-weight: 700; margin-bottom: 8px;">企業様・ブランド様へ</div>
+  <p style="font-size: 12px; color: #666; line-height: 1.7; margin-bottom: 14px;">
+    Threadsフォロワー6,700人（美容・スキンケア特化）。<br>
+    スポンサー投稿・PR記事・商品レビューのご依頼を承っております。<br>
+    美容専門家の視点から、自然なかたちで商品の魅力をお伝えします。
+  </p>
+  <a href="mailto:ponomedia2025@gmail.com?subject=【PR依頼】白石あやねThreadsアカウント&body=はじめまして。%0A貴アカウントへのPRについてご相談させてください。%0A%0A【商品・サービス名】%0A【ご希望の内容】%0A【ご予算】%0A%0Aよろしくお願いいたします。"
+     style="display:block; text-align:center; padding:12px; border:1.5px solid #888; border-radius:8px; color:#555; font-size:13px; font-weight:500; text-decoration:none;">
+    お問い合わせ（メール）
+  </a>
+</div>
+
 <div class="footer">
-  白石あやね — Threads @ayane_beauty<br>
-  ※ページ内のリンクはアフィリエイトリンクを含みます
+  白石あやね — Threads<br>
+  ※ページ内のリンクにはアフィリエイトリンクを含みます<br>
+  ※効果には個人差があります
 </div>
 
 <script src="beauty_data.js"></script>
 <script>
   if (typeof PRODUCT_LIST !== 'undefined' && PRODUCT_LIST.length > 0) {
     var container = document.getElementById('product-list');
-    PRODUCT_LIST.forEach(function(p) {
+    var currentCategory = null;
+    var NEW_BADGES = ['ヘアオイル'];  // NEWバッジを表示するbadge名
+
+    // 美容液（1番目）はピックアップに表示済みなのでスキップ
+    PRODUCT_LIST.forEach(function(p, idx) {
+      if (idx === 0) return;
+
+      // カテゴリが変わったら区切りを挿入
+      if (p.category !== currentCategory) {
+        currentCategory = p.category;
+        var divider = document.createElement('div');
+        divider.className = 'category-divider';
+        divider.textContent = p.category;
+        container.appendChild(divider);
+      }
+
       var hasUrl = p.url && p.url.length > 0;
+      var isNew = NEW_BADGES.indexOf(p.badge) !== -1;
       var card = document.createElement('div');
-      card.className = 'product-card';
+      card.className = 'product-card' + (isNew ? ' featured' : '');
       card.innerHTML =
         '<div class="product-header">' +
-          '<div class="product-name">' + p.name + '</div>' +
+          '<div class="product-name">' + p.name + (isNew ? '<span class="tag-new">NEW</span>' : '') + '</div>' +
           '<span class="product-tag">' + p.badge + '</span>' +
         '</div>' +
         '<div class="product-desc">' + p.description + '</div>' +

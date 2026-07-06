@@ -17,6 +17,14 @@ const PRODUCT_LIST = [
     "url": "https://px.a8.net/svt/ejp?a8mat=4B1G9N+DUXC16+5QIG+5YJRM"
   },
   {
+    "name": "エマコッカーナヘアオイル",
+    "category": "ヘアケア",
+    "badge": "ヘアオイル",
+    "description": "椿・アルガン・アボカドなど6種の植物オイル配合の国産ヘアオイル。パサつき・広がりが気になる髪に使うと、翌朝のまとまりが全然違います。フローラル系の香りも上品で、サロン帰りみたいな艶が出る1本。",
+    "image": "",
+    "url": "https://px.a8.net/svt/ejp?a8mat=4B1KXQ+8XI5RE+4KJC+BX3J6"
+  },
+  {
     "name": "ロゼット 洗顔パスタ 荒性肌用",
     "category": "洗顔",
     "badge": "洗顔料",
